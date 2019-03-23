@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+	<link href="styles/Drumstyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+  <div class="keys">
+    <div data-key="65" class="key">
+      <kbd>A</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key="83" class="key">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key="68" class="key">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="70" class="key">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="71" class="key">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="72" class="key">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="74" class="key">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="75" class="key">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key="76" class="key">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+  </div>
+
+  <audio data-key="65" src="Drumsounds/clap.wav"></audio>
+  <audio data-key="83" src="Drumsounds/hihat.wav"></audio>
+  <audio data-key="68" src="Drumsounds/kick.wav"></audio>
+  <audio data-key="70" src="Drumsounds/openhat.wav"></audio>
+  <audio data-key="71" src="Drumsounds/boom.wav"></audio>
+  <audio data-key="72" src="Drumsounds/ride.wav"></audio>
+  <audio data-key="74" src="Drumsounds/snare.wav"></audio>
+  <audio data-key="75" src="Drumsounds/tom.wav"></audio>
+  <audio data-key="76" src="Drumsounds/tink.wav"></audio>
+
+<script>
+	window.addEventListener('keydown', function(e){
+	const audio = document.querySelector(`audio[data-key = "${e.keyCode}"]`);
+	const key = document.querySelector(`.key[data-key = "${e.keyCode}"]`);
+	//add transition animation
+	if(!audio) return;//stop audio from running all together
+	audio.currentTime = 0;//rewind to start
+	audio.play();
+	key.classList.add('playing');
+	
+	});
+	
+	function removeTransition(e){
+	
+		if (e.propertyName !== 'transition')return;//skip if not a transform
+		
+		console.log(e.propertyName);
+		
+		//this.classList.remove('playing');
+	}
+	//another solution without timeouts(fixes transition removal problem - it wouldn't get rid of key playing class)- (https://stackoverflow.com/questions/43966150/bug-with-transitionend-event-not-correctly-removing-a-css-class)
+	window.addEventListener('keyup', function (e) {
+	const key = document.querySelector(`.key[data-key="${e.keyCode}"]`)
+	if(key && key.classList.contains('playing')) key.classList.remove('playing');
+	});
+	//remove transition animation
+	//const keys = document.querySelectorAll('.key');
+	//keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+	
+	
+</script>
+
+
+</body>
+</html>

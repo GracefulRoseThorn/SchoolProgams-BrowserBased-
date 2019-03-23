@@ -1,0 +1,27 @@
+body{ 
+	padding: 0; 
+	margin: 0;
+	background: #eeefff; 
+	
+} 
+button{
+	background: #eee;
+	display: block; 
+	margin: 0 auto;
+	margin-top:20px;
+	
+}
+canvas{ 
+	background: #000000; 
+	display: block; 
+	margin: 0 auto; 
+	border: 5px solid black;
+}
+h1{
+	text-align:center;
+	font-size:20px;
+}
+p{
+	text-align:center;
+	font-size:18px;
+}

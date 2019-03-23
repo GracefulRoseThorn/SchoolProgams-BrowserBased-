@@ -1,0 +1,204 @@
+html{
+  background-color:#e3e5e8;
+
+}
+header{
+  height:3em;
+  width:100%;
+  background-color: #000000;
+  color: white;  
+  position:fixed;
+  margin-top:-50px;
+  margin-left:-8px;
+	
+}
+p{
+  padding-left:10px;
+  padding-right:10px;
+  font-size:16px;
+	
+}
+.smallprint{
+  font-size:12px;
+}
+
+.bigprint{
+  font-size:30px;
+}
+
+h1{
+  margin-top: 50px;
+  width:100%;
+}
+ .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+} 
+
+.body {
+  display: flex;
+  flex-direction: row;
+  background-color: #e3e5e8;
+  justify-content: space-around;
+}
+
+.content {
+  height:auto;
+  flex: 0 0 70%;
+  background-color: #ffffff; 
+  border: 1px solid grey;  
+}
+
+.nav {
+  order: -1;
+  height:9em;
+  background-color: #ffffff;
+  flex: 0 0 25%;
+}
+  .side{
+  order: 2;
+  height:230px;
+  background-color: #ffffff;
+  flex: 0 0 40px;
+  text-align: center;
+  padding-top:10px;
+  padding-bottom:10px;
+  }
+  
+footer{
+  height:auto;
+  background-color: #000000;
+  color: white;  
+  padding-top:.2em;
+  padding-bottom:.2em;
+
+}
+
+@media (max-width: 768px){
+  .body {
+    flex-direction: column;
+    flex: 1;
+	width:100%;
+	height:100%;
+  }
+  .content {
+    flex: 1;
+	width:100%;
+	height:auto;
+  }
+  .nav {
+	width:100%;
+    height:auto;
+  }
+  .side{
+    order: -1;
+	width:100%;
+    height:2em;
+
+  }
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  } 
+}
+
+
+@media (min-width: 468px){
+  .side{
+    order: 2;
+  }
+}
+
+
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  width: 30px;
+  text-align: center;
+
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  width: 30px;
+  text-align: center;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  width: 30px;
+  text-align: center;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  width: 30px;
+  text-align: center;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  width: 30px;
+  text-align: center;
+}
+
+.blackcolor {
+color: black;
+}
+
+.button2 {
+    display: block;
+    background: #c4cad3;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+	border-color: #000000;
+    margin-left:10px;
+    margin-right:10px;
+}
+.margin1{
+	margin-top: -22px;
+
+}
+.margin1 .button2 {
+    display: block;
+    background: #c4cad3;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+	border-color: #000000;
+    margin-top: -22px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+

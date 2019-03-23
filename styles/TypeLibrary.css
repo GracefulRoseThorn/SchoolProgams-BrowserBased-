@@ -1,0 +1,12 @@
+html{
+	background:#ffffff;
+}
+body{
+	margin:auto;
+	margin-top: 10%;	
+	background: #eeefff;
+	width:500px;
+	height:auto;
+	text-align:center;
+	border:3px solid black;
+}

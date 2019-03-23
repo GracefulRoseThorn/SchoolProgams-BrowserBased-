@@ -1,0 +1,112 @@
+
+
+
+html{
+background-color: #AED6F1;
+}
+
+body {
+  width: 1340px;
+  height: 1900px;
+  margin: auto;
+  margin-top: 0px;
+  background-color: #AED6F1;
+  padding: 0 0px 0px 0px;
+  border: 3px solid black;
+}
+
+h1 {
+  font-size: 30px;
+  width: 1340px;
+  margin: 0 auto;
+  background-color:#1FB1AF;
+  padding: 0 0px 0px 0px;
+  border: 0px solid black;
+}
+
+h2 {
+  width: 300px;
+  height: 1845px;
+  margin-left: 0px;
+  margin-top: 5px;
+  background-color: #66BABC;
+  padding: 0 0px 0px 0px;
+  border: 0px solid black;
+}
+
+ h3{
+  width: 1030px;
+  height: 1845px;
+  margin-left: 5px;
+  margin-top: 5px;
+  background-color: #AED6F1;
+  padding: 0 0px 0px 0px;
+  border: 0px solid black;
+
+}
+  p{
+  padding: 0 70px 0px 70px;
+  border: 1px solid transparent;
+  }
+ .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+} 
+.blackcolor {
+color: black;
+}
+.whitecolor {
+color: white;
+}
+.button1 {
+    display: block;
+    background: #63aadf;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+	border-color: #000000;
+}
+.button2 {
+    display: block;
+    background: #66BABC;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+	border-color: #3a6c6d #66BABC;
+}
+.margin1{
+	margin-top: -22px;
+}
+.margin1 .button2 {
+    display: block;
+    background: #66BABC;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+	border-color: #3a6c6d #66BABC;
+    margin-top: -22px;
+}
+.margin1 .button1  {
+	margin-top: -22px;
+    display: block;
+    background: #63aadf;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+	border-color: #000000;
+} 
+
+  
+font-family: 'Tangerine 27px', serif;
+
+
+
+
